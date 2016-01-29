@@ -1,3 +1,7 @@
+/* Google fonts */
+@import url(https://fonts.googleapis.com/css?family=Norican);
+/* ----------   */
+
 
 .booyah-box {
 	  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -27,4 +31,10 @@ body {
 	background:url('/assets/debut_dark.png');
 	border-radius: 0;
 	box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #30B025;
+  font-family: 'Norican', cursive;
+  font-size: 35px;
 }
