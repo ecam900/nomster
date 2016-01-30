@@ -47,3 +47,7 @@ gem 'sprockets', '2.11.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'kaminari'
+
+gem 'simple_form'
