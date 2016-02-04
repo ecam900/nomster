@@ -1,7 +1,9 @@
 class Place < ActiveRecord::Base
 	#Kamari Pagination-----
 	paginates_per 5
+
 	belongs_to :user
+	has_many :comments
 	
 	#Geocoding-------------
 	geocoded_by :address
