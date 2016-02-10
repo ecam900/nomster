@@ -40,23 +40,25 @@ function initMap() {
 
 	<div class="pull-right">
 		<% if current_user && current_user == @place.user %>
+    <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModaltwo">
+      Add Picture
+      </button>
 		<%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
 		<%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm:'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
-		<% end %>
+     <% end %>
 	</div>
+
+<% # DISPLAYING PICTURES INSIDE THE BOOYAH-BOX -------------- %>
+  <% if @place.photos.present? %>
   <div class="booyah-box col-xs-6 col-sm-6">
-  <% # DISPLAYING PICTURES INSIDE THE BOOYAH-BOX -------------- %>
+
   <% @place.photos.each do |photo| %>
-      <%= image_tag photo.picture.resize "250x200" %>
+      <%= image_tag photo.picture, :class => 'img-responsive' %>
       <%= photo.caption %>
     <% end %>
   </div>
-
-</div>
-
-
-
-<div class="clear"></div>
+  <% end %>
 <% # MODAL FOR PICTURES -------------------------- %>
 
 
@@ -87,16 +89,17 @@ function initMap() {
     </div>
   </div>
 </div>
- <div class="col-xs-10 col-xs-offset-1">
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModaltwo">
-    Add Photo
-  </button>
-</div>
+ 
+
 <div class="clear"></div>
 <% # MODAL FOR PICTURES -----------END------------ %>
+</div>
 
 
+
+<div class="clear"></div>
+
+<div class="booyah-box col-xs-10 col-xs-offset-1">
 
 <% # MODAL FOR COMMENTS ------------------------- %>
 
@@ -157,3 +160,4 @@ function initMap() {
     <% end %>
 
 
+</div>
