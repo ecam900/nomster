@@ -1,5 +1,5 @@
 class NotificationMailer < ActionMailer::Base
-  default from: "no-reply@recao.club"
+  default from: "recao.club@gmail.com"
 
   def comment_added
   	mail(to: "ecam900@gmail.com",
