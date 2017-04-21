@@ -1,28 +1,10 @@
-== README
+== Recao
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Recao is a yelp clone dedicated to vegetarians and vegans. Find, add and review your favorite vegetarian-friendly restaurants in Puerto Rico.
 
-Things you may want to cover:
+== Key Features
+- User dashboards, with all of the user's comments, reviews and listed places.
+- Mobile-First responsive design, using Bootstrap
+- Pagination using Kaminari gem
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Find it live here: http://nomster-eric-crescioni.herokuapp.com/
